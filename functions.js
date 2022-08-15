@@ -21,21 +21,22 @@ function compareChoices(computer, user) {
 function calculation(result) {
     if (result === "The computer wins!") { computer_score++; }
     else if (result === "You win!") { user_score++; }
-    content1.textContent = "Computer Score: " + computer_score + " " + "User Score: " + user_score; 
-    if (computer_score == 5) { content.textContent = "The computer wins the game! Final Score: Computer - " + computer_score + " " + "User - " + user_score; reset(); }
-    else if (user_score == 5) { content.textContent = "The user wins the game! Final Score: Computer - " + computer_score + " " + "User - " + user_score; reset(); }
+    content1.textContent = "Computer Score: " + computer_score + " - " + "User Score: " + user_score; 
+    if (computer_score == 5) { content.textContent = "The computer wins the game! Final Score is Computer: " + computer_score + " - " + "User: " + user_score; reset(); }
+    else if (user_score == 5) { content.textContent = "The user wins the game! Final Score is Computer: " + computer_score + " - " + "User: " + user_score; reset(); }
 }
 
 //Resets the game
 function reset(){
     computer_score = 0;
     user_score = 0;
-    content1.textContent = "Computer Score: " + computer_score + " " + "User Score: " + user_score; 
+    content1.textContent = "Computer Score: " + computer_score + " - " + "User Score: " + user_score; 
 }
 
 //Displays the round result
 const round_result = document.querySelector('#round_result');
 const content = document.createElement('div');
+content.textContent = "Select your first choice to begin the game"
 content.classList.add('content');
 round_result.appendChild(content);
 
@@ -46,7 +47,7 @@ const content1 = document.createElement('div');
 content1.classList.add('content1');
 let computer_score = 0;
 let user_score = 0;
-content1.textContent = "Computer Score: " + computer_score + " " + "User Score: " + user_score; 
+content1.textContent = "Computer Score: " + computer_score + " - " + "User Score: " + user_score; 
 scores.appendChild(content1);
 
 //User Choice: Rock

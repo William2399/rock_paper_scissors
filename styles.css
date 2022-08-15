@@ -30,3 +30,40 @@ h1 {
     font-size: 50px;
     margin-bottom: 20px;
 }
+
+.content {
+    display: flex;
+    margin: auto;
+    justify-content: center;    
+    text-align: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #b4b5b6;
+    padding: 20px;
+    height: auto;
+    width: 60%;
+    font-family: 'Raleway';
+    font-size: 25px;
+    color: black;
+}
+
+.content1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;    
+    text-align: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #b4b5b6;
+    padding: 20px;
+    height: auto;
+    width: 40%;
+    font-family: 'Raleway';
+    font-size: 25px;
+    color: black;
+}
+
+#scores {
+    margin-top: 20px;
+}
+
