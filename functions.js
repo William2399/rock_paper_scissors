@@ -36,7 +36,7 @@ function reset(){
 //Displays the round result
 const round_result = document.querySelector('#round_result');
 const content = document.createElement('div');
-content.textContent = "Select your first choice to begin the game"
+content.textContent = "Select your first choice to begin. First to 5 wins!"
 content.classList.add('content');
 round_result.appendChild(content);
 
