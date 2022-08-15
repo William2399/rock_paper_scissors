@@ -1,6 +1,7 @@
 //Generates a random choice for the computer
 function getComputerChoice() {
-    result = Math.floor(Math.random() * (3));
+    result = Math.floor(Math.random() * 3);
+    console.log(result);
     if (result == 0) { return "rock"; }
     else if (result == 1) { return "paper"; }
     else { return "scissors"; }
