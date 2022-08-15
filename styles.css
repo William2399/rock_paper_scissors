@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 200px;
+    height: auto;
+    margin: 25px 50px 25px 50px;
+    background: none;
+    color: #b4b5b6;
+    border: 5px solid;
+    border-width: 0.2em;
+    padding: 1em 1em;
+    border-radius: 10px;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+input:hover {
+    border-color: #696969;
+    box-shadow: 0em 0.5em 0.5em -0.4em #8d8d8d;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
